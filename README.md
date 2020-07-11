@@ -88,6 +88,8 @@ Insted of Password based challenge, the server identifies client using their cer
 
 
 5) Cretate Client Certificate for Alok and Sign using RootCA_Alok so that server trusts:
+
+	Server Says: I dont trust "Client Alok" (since Alok certificate is not addded in JKS) but I do trust "Root CA Alok" and he trusts you so do I.
 	
 	5.1) Generate Client Key and CSR
 	
