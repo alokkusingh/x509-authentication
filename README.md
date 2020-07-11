@@ -121,3 +121,22 @@ Insted of Password based challenge, the server identifies client using their cer
 		Locate the Baeldung tutorials folder and its subfolder spring-security-x509/store
 		Select the clientBob.p12 file and click OK
 		Input the password for your certificate and click OK
+
+7) Hit the Secure URL
+	
+	7.1) Using Firefox
+	
+		https://localhost:8443/user
+		
+		It will promt to select one of the installed client certificate in the Browser
+		
+	7.2) Hit the API URL using CURL
+	
+		curl --cacert rootCA_Alok.crt --key clientAlok.key --cert clientAlok.crt https://localhost:8443/api/user
+		
+		Where:
+			cacert: Root CA Cert who signed server certificate (substitute of step 3)
+			key: Client Key (substitute of step 6)
+			cert: Client Certificate (substitute of step 6)
+			
+		Note: for this step you may skip steps - 3, 5.3, and 6 (above)
