@@ -1,6 +1,9 @@
 # x509-authentication
 Spring Security X.509 Certificate Based Authentication
 
+Insted of Password based challenge, the server identifies client using their certificate.
+
+
 ## Certificate Generation and Usage
 
 1) Root Certificate:
