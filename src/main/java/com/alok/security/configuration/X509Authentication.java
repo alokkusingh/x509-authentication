@@ -29,7 +29,7 @@ public class X509Authentication extends WebSecurityConfigurerAdapter {
         return new UserDetailsService() {
             @Override
             public UserDetails loadUserByUsername(String username) {
-                if (username.equals("Alok")) {
+                if (username.equalsIgnoreCase("alok") || username.equalsIgnoreCase("rachna")) {
                     return new User(username, "",
                             AuthorityUtils
                                     .commaSeparatedStringToAuthorityList("ROLE_USER"));
