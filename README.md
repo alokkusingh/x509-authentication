@@ -144,8 +144,10 @@ Insted of Password based challenge, the server identifies client using their cer
 ## Contenets in Key Store and Trustore
 
 1) Key Store
-        - localhost.key
+        
+	- localhost.key
 	- localhost.crt
 
 2) Trust Store
-        - rootCA_Alok.crt
+        
+	- rootCA_Alok.crt
