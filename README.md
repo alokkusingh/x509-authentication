@@ -140,3 +140,12 @@ Insted of Password based challenge, the server identifies client using their cer
 			cert: Client Certificate (substitute of step 6)
 			
 		Note: for this step you may skip steps - 3, 5.3, and 6 (above)
+
+## Contenets in Key Store and Trustore
+
+1) Key Store
+        - localhost.key
+	- localhost.crt
+
+2) Trust Store
+        - rootCA_Alok.crt
