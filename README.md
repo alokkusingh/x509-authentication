@@ -7,9 +7,11 @@ Insted of Password based challenge, the server identifies client using their cer
 ## Certificate Generation and Usage
 
 1) Root Certificate:
+
 		```
 		openssl req -x509 -sha256 -days 3650 -newkey rsa:4096 -keyout rootCA_Alok.key -out rootCA_Alok.crt
 		```
+		
 		Pwd: changeit
 		generates: 
 			rootCA_Alok.key
