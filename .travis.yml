@@ -2,12 +2,12 @@ language: java
 jdk:
   - openjdk8
 
-script: ./gradlew clean build --info
+script: ./mvnw clean install
 
 jobs:
   include:
     - stage: Test
-      script: ./gradlew clean test
+      script: ./mvnw clean test
 
 notifications:
   email: alok.ku.singh@gmail.com
