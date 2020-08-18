@@ -1,7 +1,7 @@
 # x509-authentication
 Spring Security X.509 Certificate Based Authentication
 
-Insted of Password based challenge, the server identifies client using their certificate.
+Instead of Password based challenge, the server identifies client using their certificate.
 
 
 ## Certificate Generation and Usage
@@ -9,7 +9,8 @@ Insted of Password based challenge, the server identifies client using their cer
 1) Root Certificate:
 
 		openssl req -x509 -sha256 -days 3650 -newkey rsa:4096 -keyout rootCA_Alok.key -out rootCA_Alok.crt
-			Pwd: changeit
+		
+		Pwd: changeit
 		generates: 
 			rootCA_Alok.key
 			rootCA_Alok.crt
