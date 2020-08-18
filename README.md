@@ -189,7 +189,7 @@ Assuming lo0 is loopback interface.
     - [C <-- S] 10 ACK
     - [C <-- S] 11 Change Cipher Spec (from now onwards to use symmetric key encryption/decryption - shared recently) 
     - [C --> S] 12 ACK
-    - [C <-- S] 13 Encrypted Handshake Message 
+    - [C <-- S] 13 Encrypted Handshake Message (Finished) - indicates TLS negotiations completed
     - [C --> S] 14 ACK
     - [C --> S] 15 GET request from Client
     - [C <-- S] 16 ACK 
