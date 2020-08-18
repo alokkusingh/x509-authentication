@@ -3,6 +3,14 @@ Spring Security X.509 Certificate Based Authentication
 
 Instead of Password based challenge, the server identifies client using their certificate.
 
+Table of Contents
+=================
+
+   * [Certificate Generation and Usage](#certificate-generation-and-usage)
+   * [Contents in Key Store and Truststore](#contents-in-key-store-and-truststore)
+   * [TCP Dump and Analysis](#tcp-dump-and-analysis)
+
+Created by [Alok Singh](https://github.com/alokkusingh)
 
 ## Certificate Generation and Usage
 
@@ -142,7 +150,7 @@ Instead of Password based challenge, the server identifies client using their ce
 			
 		Note: for this step you may skip steps - 3, 5.3, and 6 (above)
 
-## Contenets in Key Store and Trustore
+## Contents in Key Store and Truststore
 
 1) Key Store
         
@@ -153,11 +161,11 @@ Instead of Password based challenge, the server identifies client using their ce
         
 	- rootCA_Alok.crt
 
-## TCP Dump - 
+## TCP Dump and Analysis
 
 Find the dump file under dump/ folder. You may use Wiresark to read the dump file.
 
-1) TCP Dump command
+1) TCP Dump Command
 ````
 sudo tcpdump -i lo0 -n -s0 -w /Users/aloksingh/logs/x509App_04.cap port 8443
 ````
