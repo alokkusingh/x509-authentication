@@ -84,8 +84,7 @@ Created by [Alok Singh](https://github.com/alokkusingh)
 		Type about:preferences in the address bar
 		Open Advanced -> Certificates -> View Certificates -> Authorities
 		Click on Import
-		Locate the Baeldung tutorials folder and its subfolder spring-security-x509/keystore
-		Select the rootCA.crt file and click OK
+		Select rootCA_Alok.crt file and click OK
 		Choose “Trust this CA to identify websites” and click OK
 
 
@@ -127,8 +126,7 @@ Created by [Alok Singh](https://github.com/alokkusingh)
 		Type about:preferences in the address bar
 		Open Advanced -> View Certificates -> Your Certificates
 		Click on Import
-		Locate the Baeldung tutorials folder and its subfolder spring-security-x509/store
-		Select the clientBob.p12 file and click OK
+		Select clientAlok.p12 file and click OK
 		Input the password for your certificate and click OK
 
 7) Hit the Secure URL
