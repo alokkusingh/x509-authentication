@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/alokkusingh/x509-authentication.svg?branch=master)](https://travis-ci.org/github/alokkusingh/x509-authentication)
+[![GitHub issues](https://img.shields.io/github/issues/alokkusingh/x509-authentication.svg)](https://github.com/alokkusingh/x509-authentication/issues)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/alokkusingh/x509-authentication.svg?maxAge=2592000)](https://github.com/alokkusingh/x509-authentication/issues?q=is%3Aissue+is%3Aclosed)
+
 # x509-authentication
 Spring Security X.509 Certificate Based Authentication
 
