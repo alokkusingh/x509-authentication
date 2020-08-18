@@ -151,3 +151,35 @@ Insted of Password based challenge, the server identifies client using their cer
 2) Trust Store
         
 	- rootCA_Alok.crt
+
+## TCP Dump - 
+
+Find the dump file under dump/ folder. You may use Wiresark to read the dump file.
+
+1) TCP Dump command
+````
+sudo tcpdump -i lo0 -n -s0 -w /Users/aloksingh/logs/x509App_04.cap port 8443
+````
+
+Assuming lo0 is loopback interface.
+
+2) Dump Analysis
+    - First 4 packets is for TCP handshake
+    - 5 and 6 Client Hello and ACK from server
+    - 7 Server Hello along with Server Certificate, Server Key Exchange, Certificate Request 
+    - 8 ACK from client
+    - 9 Client Certificate and Client Key Exchange
+    - 10 ACK from server
+    - 11 
+    - 12 
+    - 13 
+    - 14 
+    - 15 GET request from Client
+    - 16 ACK from server
+    - 17 GET response from Server
+    - 18 ACK from client
+    - 19 
+    - 20 
+    - 21 FIN from client
+    - 22 ACK from server
+    
