@@ -165,6 +165,8 @@ sudo tcpdump -i lo0 -n -s0 -w /Users/aloksingh/logs/x509App_04.cap port 8443
 Assuming lo0 is loopback interface.
 
 2) Dump Analysis
+
+    ![alt text](https://github.com/alokkusingh/x509-authentication/blob/master/dump/dump.png?raw=true "TCP Packets")
     - First 4 packets is for TCP handshake
     - 5 and 6 Client Hello and ACK from server
     - 7 Server Hello along with Server Certificate, Server Key Exchange, Certificate Request 
