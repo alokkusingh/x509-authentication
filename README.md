@@ -177,6 +177,9 @@ Assuming lo0 is loopback interface.
 2) `Dump Analysis`
 
     ![alt text](https://github.com/alokkusingh/x509-authentication/blob/master/dump/dump.png?raw=true "TCP Packets")
+    
+    Note: The above screenshot is without decrypting the Application data. If you want to see the decrypted application data you need to extract `pre_master_secret_key` (symmetric key) from the dump using `ssldump` tool and pass the same key log file to Wireshark. So that Wireshark can decrypt the application dta using the symmetric key and show in here.
+    
     - `[C <-> S]` `First 4` packets is for `TCP handshake`
     - `[C <-> S]` `5` and `6` `Client Hello` and ACK from server
     - `[C <-- S]` `7` `Server Hello` along with 
